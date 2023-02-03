@@ -12,3 +12,11 @@ def home(request):
 def post(request, post_id):
     post = Post.objects.get(pk=post_id)
     return render(request, 'post.html', {'post': post})
+
+
+def about(request):
+    return render(request, 'about.html')
+
+
+def contact(request):
+    return render(request, 'contact.html')
